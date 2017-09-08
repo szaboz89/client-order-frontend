@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html>
+<html xmlns:wicket="http://wicket.apache.org">
+<head>
+    <title>Aruhaz</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+<div id="header_menu">
+    <wicket:link>
+        <ul>
+            <li><a href="ListProduct.html">Termékek</a></li>
+            <li><a href="ListClients.html">Ügyfelek</a></li>
+            <li><a href="ListOrders.html">Rendelések</a></li>
+            <li><a href="ListRequest.html">Igények</a></li>
+            <li><a href="CreateProduct.html">Termékek kezelése</a></li>
+            <li><a href="ListReceipt.html">Számlák</a></li>
+            <li><a href="ListEmployees.html">Dolgozók</a></li>
+        </ul>
+    </wicket:link>
+</div>
+
+<div id="childBox">
+    <wicket:child/>
+</div>
+
+<div id="footer_menu">
+    <span wicket:id="logged">user</span> <a href="#" wicket:id="logout">Kilépés</a> <a href="#" wicket:id="login">Bejelentkezés</a>
+
+</div>
+
+</body>
+</html>

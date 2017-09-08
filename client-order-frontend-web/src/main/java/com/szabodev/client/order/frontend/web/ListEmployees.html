@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html>
+<html xmlns:wicket="http://wicket.apache.org">
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<wicket:extend>
+
+    <div wicket:id="listContainer">
+
+        <div wicket:id="feedback"></div>
+
+        <h4>Dolgozók kezelése</h4>
+        <form wicket:id="createEmployee">
+            <table>
+                <tr>
+                    <td align="right">Felhasználó név:</td>
+                    <td><input wicket:id="username" type="text"/></td>
+                    <td align="right">Dolgozó ID:</td>
+                    <td><select wicket:id="updateid"/>
+                    </td>
+                    <td><input wicket:id="update_submit" type="submit"
+                               value="Módosítás"/></td>
+                    <td><input wicket:id="delete" type="submit" value="Törlés"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="right">Jelszó:</td>
+                    <td><input wicket:id="userpassword" type="password"/></td>
+                </tr>
+                <tr>
+                    <td align="right">Jogosultság:</td>
+                    <td><input wicket:id="mode" type="text"/></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input wicket:id="create_submit" type="submit"
+                               value="Új dolgozó"/></td>
+                </tr>
+            </table>
+        </form>
+
+        <h3>Dolgozók</h3>
+        <div id="mytable">
+            <table>
+                <thead>
+                <tr>
+                    <th aling="left">ID</th>
+                    <th aling="left">Név</th>
+                    <th aling="left">Mód</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr wicket:id="employees">
+                    <td><span wicket:id="userid">vmi</span></td>
+                    <td><span wicket:id="username">vmi</span></td>
+                    <td><span wicket:id="mode2">vmi</span></td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+</wicket:extend>
+</body>
+</html>

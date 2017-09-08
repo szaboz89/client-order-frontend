@@ -1,0 +1,90 @@
+body {
+	margin: 15px auto 15px auto;
+	max-width: 850px;
+	max-width: 850px;
+    background: #f2f5f6; /* Old browsers */
+    background: -moz-linear-gradient(top,  #f2f5f6 0%, #e3eaed 37%, #c8d7dc 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f2f5f6), color-stop(37%,#e3eaed), color-stop(100%,#c8d7dc)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #f2f5f6 0%,#e3eaed 37%,#c8d7dc 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #f2f5f6 0%,#e3eaed 37%,#c8d7dc 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #f2f5f6 0%,#e3eaed 37%,#c8d7dc 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #f2f5f6 0%,#e3eaed 37%,#c8d7dc 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2f5f6', endColorstr='#c8d7dc',GradientType=0 ); /* IE6-9 */
+}
+
+h1 {
+	font-size: 200%;
+}
+
+h2 {
+	font-size: 140%;
+}
+
+h3 {
+	font-size: 110%;
+}
+
+#mytable table {
+	border-collapse: collapse;
+	border: 1px solid black;
+}
+
+#mytable th {
+	padding: 5px;
+	background-color: #7acbed;
+	border: 1px solid black;
+}
+
+#mytable td {
+	padding: 5px;
+	background-color: #F7F9FA;
+	border: 1px solid black;
+}
+
+#header_menu {
+	background-color: #9DD0EC;
+	border: 1px solid;
+    -webkit-border-top-left-radius: 10px;
+    -webkit-border-top-right-radius: 10px;
+    -moz-border-radius-topleft: 10px;
+    -moz-border-radius-topright: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+#header_menu li {
+	display: inline;
+    padding: 10px;
+}
+
+#header_menu li:hover {
+	background-color: #eff5fa;
+    padding: 16px 10px;
+}
+
+#header_menu a {
+	color: #000000;
+}
+
+#footer_menu {
+	background-color: #9DD0EC;
+	padding: 5px;
+	border: 1px solid;
+	text-align: right;
+}
+
+#footer_menu a {
+    color: #000000;
+    padding: 10px;
+}
+
+#childBox {
+	background-color: #eff5fa;
+	border-left: 1px solid;
+	border-right: 1px solid;
+	padding: 20px;
+}
+
+#childBox a {
+	color: #000000;
+}

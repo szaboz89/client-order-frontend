@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html>
+<html xmlns:wicket="http://wicket.apache.org">
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<wicket:extend>
+    <div wicket:id="listContainer">
+
+        <div wicket:id="feedback"></div>
+
+        <h4>Rendelési igény leadása</h4>
+        <form wicket:id="newOrder">
+            <table>
+                <tr>
+                    <td align="right">Ügyfél azonosító:</td>
+                    <td><input wicket:id="userid" type="text"/></td>
+                </tr>
+                <tr>
+                    <td align="right">Termék azonosító:</td>
+                    <td><select wicket:id="productid" type="text"/></td>
+                </tr>
+                <tr>
+                    <td align="right">Megjegyzés:</td>
+                    <td><textarea wicket:id="description" type="text"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input wicket:id="newOrderSubmit" type="submit"
+                               value="Hozzáad"/></td>
+                </tr>
+
+            </table>
+        </form>
+
+        <h3>Termékek</h3>
+        <div id="mytable">
+            <table>
+                <thead>
+                <tr>
+                    <th aling="left">ID</th>
+                    <th aling="left">Név</th>
+                    <th aling="left">Ár</th>
+                    <th aling="left">Leírás</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr wicket:id="products">
+                    <td><span wicket:id="productid">vmi</span>
+                    </td>
+                    <td><span wicket:id="productname">vmi</span>
+                    </td>
+                    <td><span wicket:id="price">vmi</span>
+                    </td>
+                    <td><span wicket:id="description">vmi</span>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</wicket:extend>
+</body>
+</html>

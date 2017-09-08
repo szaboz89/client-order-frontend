@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html>
+<html xmlns:wicket="http://wicket.apache.org">
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<wicket:extend>
+
+    <div wicket:id="listContainer">
+
+        <div wicket:id="feedback"></div>
+
+        <h4>Számlák kezelése</h4>
+        <form wicket:id="formupload">
+            <table>
+                <tr>
+                    <td align="right">Rendelés ID:</td>
+                    <td><select wicket:id="orderid" type="text"/></td>
+                    <td align="right">Számla ID:</td>
+                    <td><select wicket:id="deleteid"/>
+                    </td>
+                    <td><input wicket:id="delete" type="submit" value="Törlés"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="right">Fájl</td>
+                    <td><input wicket:id="uploadFile" type="file"/></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="submit" value="Feltöltés"/></td>
+                </tr>
+            </table>
+        </form>
+
+        <h3>Számlák</h3>
+        <div id="mytable">
+            <table>
+                <thead>
+                <tr>
+                    <th aling="left">Számla ID</th>
+                    <th aling="left">Rendelés ID</th>
+                    <th aling="left">Számla</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr wicket:id="receipts" class="clients">
+                    <td><span wicket:id="receiptid">vmi</span>
+                    </td>
+                    <td><span wicket:id="orderid">vmi</span>
+                    </td>
+                    <td><span wicket:id="receipt">vmi</span>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <h3>Számla letöltése</h3>
+        <form wicket:id="dowloandform">
+            <table>
+                <tr>
+                    <td align="right">Számla ID:</td>
+                    <td><select wicket:id="donwloadid" type="text"/></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input wicket:id="download" type="submit"
+                               value="Letöltés"/>
+                    </td>
+                </tr>
+            </table>
+        </form>
+        <a wicket:id="allDownload" href="#">Összes számla letöltése</a> <br/>
+
+    </div>
+</wicket:extend>
+</body>
+</html>

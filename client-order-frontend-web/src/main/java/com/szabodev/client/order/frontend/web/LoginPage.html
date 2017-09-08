@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html>
+<html xmlns:wicket="http://wicket.apache.org">
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<wicket:extend>
+    <div wicket:id="feedback"></div>
+    <form wicket:id="signInForm">
+        <table>
+            <tr>
+                <td align="right">Felhasználónév:</td>
+                <td><input wicket:id="username" type="text"/></td>
+            </tr>
+            <tr>
+                <td align="right">Jelszó:</td>
+                <td><input wicket:id="password" type="password"/></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input wicket:id="submit" type="submit"
+                           value="Bejelentkezés"/>
+                </td>
+            </tr>
+        </table>
+    </form>
+</wicket:extend>
+</body>
+</html>

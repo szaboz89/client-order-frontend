@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html>
+<html xmlns:wicket="http://wicket.apache.org">
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<wicket:extend>
+    <div wicket:id="listContainer">
+        <div wicket:id="feedback"></div>
+
+        <h4>Ügyfelek kezelése</h4>
+        <form wicket:id="createClient">
+            <table>
+                <tr>
+                    <td align="right">Név:</td>
+                    <td><input wicket:id="username2" type="text"/></td>
+                    <td align="right">Ügyfél ID:</td>
+                    <td><select wicket:id="updateid"/>
+                    </td>
+                    <td><input wicket:id="update_submit" type="submit"
+                               value="Módosítás"/>
+                    </td>
+                    <td><input wicket:id="delete" type="submit" value="Törlés"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="right">Cím:</td>
+                    <td><input wicket:id="address2" type="text"/></td>
+
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input wicket:id="create_submit" type="submit"
+                               value="Új ügyfél felvétele"/></td>
+                </tr>
+            </table>
+        </form>
+
+        <h3>Ügyfelek</h3>
+        <div id="mytable">
+            <table>
+                <thead>
+                <tr>
+                    <th aling="left">Ügyfél ID</th>
+                    <th aling="left">Ügyfél neve</th>
+                    <th aling="left">Ügyfél címe</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr wicket:id="clients">
+                    <td><span wicket:id="clientid">vmi</span></td>
+                    <td><span wicket:id="name">vmi</span></td>
+                    <td><span wicket:id="address">vmi</span></td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+</wicket:extend>
+</body>
+</html>

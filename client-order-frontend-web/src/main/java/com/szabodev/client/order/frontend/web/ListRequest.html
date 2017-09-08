@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html>
+<html xmlns:wicket="http://wicket.apache.org">
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<wicket:extend>
+    <div wicket:id="listContainer">
+        <div wicket:id="feedback"></div>
+
+        <h4>Igények kezelése</h4>
+        <form wicket:id="newOrder">
+            <table>
+                <tr>
+                    <td align="right">Igény ID:</td>
+                    <td><select wicket:id="updateid"/></td>
+                    <td><input wicket:id="update_submit" type="submit"
+                               value="Felvétel rendeléshez"/>
+                    </td>
+                    <td><input wicket:id="delete" type="submit" value="Törlés"/>
+                    </td>
+                </tr>
+            </table>
+        </form>
+
+        <h3>Rendelések</h3>
+        <div id="mytable">
+            <table>
+                <thead>
+                <tr>
+                    <th aling="left">Igény ID</th>
+                    <th aling="left">Termék név</th>
+                    <th aling="left">Ügyfél neve</th>
+                    <th aling="left">Ügyfél címe</th>
+                    <th aling="left">Megjegyzés</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr wicket:id="orders" class="orders">
+                    <td><span wicket:id="orderid">vmi</span></td>
+                    <td><span wicket:id="productname">vmi</span></td>
+                    <td><span wicket:id="clientname">vmi</span></td>
+                    <td><span wicket:id="clientaddress">vmi</span></td>
+                    <td><span wicket:id="comment">vmi</span></td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</wicket:extend>
+</body>
+</html>

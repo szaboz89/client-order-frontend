@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<weblogic-web-app>
+    <context-root>client-order</context-root>
+
+    <security-role-assignment>
+        <role-name>ADMIN_USERS</role-name>
+        <principal-name>ADMIN_USERS</principal-name>
+    </security-role-assignment>
+
+    <security-role-assignment>
+        <role-name>QUERY_USERS</role-name>
+        <principal-name>QUERY_USERS</principal-name>
+    </security-role-assignment>
+
+    <!-- <container-descriptor> -->
+    <!-- <prefer-web-inf-classes>true</prefer-web-inf-classes> -->
+    <!-- </container-descriptor> -->
+</weblogic-web-app>
